@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Nanum+Myeongjo&display=swap');
+
+/*----------RESET------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Bodoni Moda', serif;
+    background-color: #faedcd;
+    
+}
+
+a{
+    color: black;
+}
+
+/*----INDEX----*/
+/*----------HEADER------------*/
+
+
+
+header {
+    background-color: #faedcd;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    z-index: 10;
+
+}
+
+header img{
+    width: 200px;
+    height: 150px;
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100; 
+    padding: 10px;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover{
+    color: gray;
+}
+
+/*----------MAIN------------*/
+
+.hero div {
+    background-image: url("../img/fondo.jpg" );
+    width:100%;
+    height: 90vh; 
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 100;
+    background-color: #faedcd70;
+    
+}
+
+.hero h3 {
+    font-size: 30px;
+    font-weight: 100;
+    background-color: #faedcd70;
+}
+
+main {
+    background-color: #faedcd;
+}
+
+.intro h2 {
+    color: goldenrod;
+    font-weight:400;
+}
+
+.intro p {
+    color: black;
+    font-weight: 100;
+}
+
+.intro img {
+    width: 400px;
+    height: 650px;
+    display: flex;
+    margin: 15px 15px 15px 15px;
+}
+
+.intro h2 p{
+    display: flex;
+
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.Sle {
+    width: 300px;
+    height: 300px;
+    
+}
+
+/*----------FOOTER------------*/
+
+footer{
+    background-color: #faedcd;
+    padding: 20px;
+}
+
+.fixed img {
+    width: 30px;
+    height: 30px;
+    margin: 15px 15px 15px 15px; 
+}
+
+footer p {
+    background-color: darkgoldenrod;
+    text-align: center;
+}
+
+/*----PROYECTOS----*/
+/*----------HEADER------------*/
+
+.proyectos {
+    background-image: url("../img/fondos.jpg");
+    width:100%;
+    height: 80vh; 
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.proyectos h1{
+    font-size: 35px;
+    font-weight: 100;
+    background-color: #faedcd70;
+
+}
+
+.gridGaleria{
+    width: 100%;
+    margin: top 50px; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    padding: 30px;
+    
+
+}
+
+.gridGaleria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    box-shadow: 10px 10px 5px 0px rgba(175,167,167,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(175,167,167,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(175,167,167,0.75);
+}
+
+.img1{
+    grid-row: span 2;
+}
+.img3{
+    grid-row: span 2;
+}
+
+.img6 {
+    grid-column: span 2;
+}
+
+
+/*----QUEHACEMOS----*/
+/*----------HEADER------------*/
+
+.InicioQueHacemos {
+    background-image: url("../img/fondo.proy.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 90vh;
+    background-position: center;
+    background-attachment: fixed;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.InicioQueHacemos h1{
+    font-size: 35px;
+    font-weight: 100;
+    background-color: #faedcd70;
+    
+    
+}
+
+.contenedorParrafo p{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    color:gray ;
+    
+    
+}
+
+.eventosSociales h3{
+    color: gray;
+
+}
+
+.eventosCorporativos h3{
+    color: gray;
+}
+
+/*----UBICACION----*/
+/*----------header------------*/
+
+h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.366);
+}
+
+/*----------nav------------*/
+
+
+/*----------main------------*/
+
+
+.contenedorUbicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+/*----CONTACTO----*/
+/*----------header------------*/
+
+.tituloPrincipalContacto {
+    background-image: url("../img/fondo.cont.jpeg");
+    width:100%;
+    height: 90vh; 
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.tituloPrincipalContacto h1{
+    font-size: 35px;
+    font-weight: 100;
+    background-color: #faedcd70;
+}
+
+/*----------nav------------*/
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:1220px){
+    .hero h1{
+        font-size: 45px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:950px){
+    .gridGaleria{
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: 220px;   
+    }
+    .gal {
+        grid-column:span 1 ;
+        grid-row: span 1;
+    }
+}
+
+@media screen and (max-width:750px){
+    header{
+        flex-direction: column;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        
+    }
+    .intro img {
+        padding:50px ;
+    }
+}
+
+@media screen and (max-width:670px){
+    .hero h3{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:550px){
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    header nav ul li{
+        margin: 5px ;
+    }
+
+
+}
+
+@media screen and (max-width:450px) {
+    .gridGaleria{
+        grid-template-columns: 1fr; 
+    }
+    .gal {
+        grid-column:span 1 ;
+        grid-row: span 1;
+    }
+
+}
+
