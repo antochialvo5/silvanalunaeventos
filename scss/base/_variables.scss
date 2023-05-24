@@ -1,0 +1,48 @@
+/*--VARIABLES--*/
+
+$color-principal:#faedcd;
+$color-secundario:gray;
+$color-teciario: goldenrod;
+
+/*PALETA DE COLORES*/
+$colores:
+#e6b39a,
+#e6cba5,
+#ede3b4,
+#8b9e9b,
+#6d7578;
+
+/*PALETA DE TAMAÑOS*/
+$font-size:
+12px,
+16px,
+20px,
+30px,
+60px;
+
+/*OPERACIONES*/
+
+/*EXTENDS*/
+
+%grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-auto-rows: 250px;
+}
+
+/*MAPAS*/
+
+$imagen: (
+    ancho:400px,
+    altura:650px,
+);
+
+/*MIXINS*/
+
+@mixin flex($flex, $direction, $justify, $alig){
+    
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: &alig;
+}

@@ -1,0 +1,90 @@
+/**Index**/
+header{
+    nav{
+        background-color:$color-principal;
+
+        .container-fluid{
+            a{
+                text-decoration: none;
+                text-decoration-color: black;
+                font-weight: 100; 
+                padding: 10px;
+                transition: 0.5s;
+                color: black;
+
+                img{
+                    width: 200px;
+                    height: 150px;
+                }
+            }
+            .navbar-toggler{
+                navbar-toggler-icon{
+                }
+            }
+        }
+        .collapse{
+            .navbar-nav{
+                list-style: none;
+                display: flex;
+                margin: 10px;
+                .nav-item{
+                    .nav-link{
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**Proyectos**/
+header{
+    .navbar{
+        .container-fluid{
+            .navbar-brand{
+
+            }
+            .navbar-toggler{
+                .navbar-toggler-icon{
+
+                }
+
+            }
+            .navbarSupportedContent{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**QueHacemos**/
+header{
+    .navbar{ 
+    }
+    .container-fluid{
+        .navbar-brand{
+
+        }
+        .navbar-toggler{
+            .navbar-toggler-icon{
+            }
+        }
+        .navbarSupportedContent{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        
+                    }
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,308 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Nanum+Myeongjo&display=swap");
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  background-color: #faedcd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bodoni Moda', serif;
+  background-color: #faedcd;
+}
+
+a {
+  color: black;
+}
+
+/*--VARIABLES--*/
+/*PALETA DE COLORES*/
+/*PALETA DE TAMAÑOS*/
+/*OPERACIONES*/
+/*EXTENDS*/
+main .gridGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+}
+
+/*MAPAS*/
+/*MIXINS*/
+/**Index**/
+header nav {
+  background-color: #faedcd;
+}
+
+header nav .container-fluid a {
+  text-decoration: none;
+  text-decoration-color: black;
+  font-weight: 100;
+  padding: 10px;
+  transition: 0.5s;
+  color: black;
+}
+
+header nav .container-fluid a img {
+  width: 200px;
+  height: 150px;
+}
+
+header nav .collapse .navbar-nav {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+/**Proyectos**/
+/**QueHacemos**/
+/**Index**/
+main .hero div {
+  background-image: url("../img/fondo.jpg");
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .hero div h1 {
+  font-size: 60px;
+  font-weight: 100;
+  background-color: gray;
+}
+
+main .hero div h3 {
+  font-size: 30px;
+  font-weight: 100;
+  background-color: gray;
+}
+
+main .intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .intro img {
+  width: 400px;
+  height: 650px;
+  display: flex;
+  margin: 15px 15px 15px 15px;
+}
+
+main .intro .Sle {
+  width: 300px;
+  height: 300px;
+}
+
+main .intro .Sle h2 {
+  color: goldenrod;
+  font-weight: 400;
+}
+
+main .intro .Sle p {
+  display: flex;
+}
+
+/**Proyectos**/
+main .proyectos {
+  background-image: url("../img/fondos.jpg");
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main div h1 {
+  font-size: 30px;
+  font-weight: 100;
+  background-color: gray;
+}
+
+main .gridGaleria {
+  width: 100%;
+  margin: top 50px;
+  /*  display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 250px; */
+  gap: 15px;
+  padding: 30px;
+}
+
+main .gridGaleria .img1 {
+  grid-row: span 2;
+}
+
+main .gridGaleria .img3 {
+  grid-row: span 2;
+}
+
+main .gridGaleria .img6 {
+  grid-column: span 2;
+}
+
+/**QueHacemos**/
+main section .InicioQueHacemos {
+  background-image: url("../img/fondo.proy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main section .InicioQueHacemos h1 {
+  font-size: 30px;
+  font-weight: 100;
+  background-color: gray;
+}
+
+main section .contenedorParrafo p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 600px;
+  height: 300px;
+  color: gray;
+}
+
+main .eventosSociales h3 {
+  color: gray;
+}
+
+main .eventosCorporativos h3 {
+  color: gray;
+}
+
+/**Ubicacion**/
+.principal .ubicacionMain .tituloUbicación h1 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.366);
+}
+
+.principal .ubicacionMain .contenedorUbicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+/**Contacto**/
+.princCont .tituloPrincipalContacto {
+  background-image: url("../img/fondo.cont.jpeg");
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.princCont .tituloPrincipalContacto h1 {
+  font-size: 30px;
+  font-weight: 100;
+  background-color: gray;
+}
+
+footer {
+  background-color: #faedcd;
+  padding: 20px;
+}
+
+footer .RedesSociales .fixed a img {
+  width: 30px;
+  height: 30px;
+  margin: 15px 15px 15px 15px;
+}
+
+footer .RedesSociales p {
+  background-color: goldenrod;
+  text-align: center;
+}
+
+@media screen and (max-width: 1220px) {
+  .hero h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .gridGaleria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 220px;
+  }
+
+  .gridGaleria .gal {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    flex-direction: column;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+  }
+
+  .intro img {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .hero h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul li {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gridGaleria {
+    grid-template-columns: 1fr;
+  }
+
+  .gridGaleria .gal {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

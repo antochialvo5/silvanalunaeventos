@@ -1,0 +1,19 @@
+footer{
+    background-color:$color-principal;
+    padding: 20px;
+    .RedesSociales{
+        .fixed{
+            a{
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin: 15px 15px 15px 15px;
+                }
+            }
+        }
+        p{
+            background-color:$color-teciario;
+            text-align: center;
+        }
+    }
+}

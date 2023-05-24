@@ -1,0 +1,213 @@
+/**Index**/
+main{
+    .hero{
+        div{
+            background-image: url("../img/fondo.jpg" );
+            width:100%;
+            height: 90vh; 
+            background-position: center;
+            background-attachment: fixed;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                font-size: nth($font-size,5);
+                font-weight: 100;
+                background-color: $color-secundario;
+            }
+            h3{
+                font-size: nth($font-size,4);
+                font-weight: 100;
+                background-color: $color-secundario;
+            }
+        }
+    }
+    
+    .intro{
+            
+            @include flex (flex, row, space-evenly, center);
+
+        img{
+            width: map-get($imagen,ancho);
+            height: map-get($imagen,altura);
+            display: flex;
+            margin: 15px 15px 15px 15px;
+        }
+        .Sle{
+            width: 300px;
+            height: 300px;
+
+            h2{
+                color:$color-teciario;
+                font-weight:400;
+            }
+            p{
+                display: flex;
+
+            }
+        }
+    }
+}
+
+/**Proyectos**/
+main{
+    .proyectos{
+        background-image: url("../img/fondos.jpg");
+        width:100%;
+        height: 80vh; 
+        background-position: center;
+        background-attachment: fixed;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div{
+        h1{
+            font-size: nth($font-size,4);
+            font-weight: 100;
+            background-color: $color-secundario;
+        }
+    }
+
+    .gridGaleria{
+        width: 100%;
+        margin: top 50px; 
+        @extend %grid;
+       /*  display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 250px; */
+        gap: 15px;
+        padding: 30px;
+
+        .img1{
+            grid-row: span 2;
+        }
+        .img3{
+            grid-row: span 2
+        }
+        .img6{
+            grid-column: span 2;
+        }
+    }
+}
+
+/**QueHacemos**/
+main{
+    section{
+        .InicioQueHacemos{
+            background-image: url("../img/fondo.proy.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:100%;
+            height: 90vh;
+            background-position: center;
+            background-attachment: fixed;
+            color:black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{
+                font-size: nth($font-size,4);
+                font-weight: 100;
+                background-color:$color-secundario;
+            }
+        }
+        .contenedorParrafo{
+            p{
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+                text-align: center;
+                width: 600px;
+                height: 300px;
+                color:$color-secundario ;
+            }
+        }
+    }
+
+    .eventosSociales{
+        h3{
+            color:$color-secundario;
+            ul{
+                li{
+
+                }
+            }
+        }
+    }
+
+    .eventosCorporativos{
+        h3{
+            color: $color-secundario;
+        }
+        ul{
+            li{
+
+            }
+        }
+    }
+}
+
+/**Ubicacion**/
+.principal{
+    .ubicacionMain{
+        .tituloUbicación{
+            h1{
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.366);
+            }
+        }
+        .contenedorUbicacion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            iframe{
+            }
+        }
+    }
+}
+
+/**Contacto**/
+.princCont{
+    .tituloPrincipalContacto{
+        background-image: url("../img/fondo.cont.jpeg");
+        width:100%;
+        height: 90vh; 
+        text-align: center;
+        background-position: center;
+        background-attachment: fixed;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: nth($font-size,4);
+            font-weight: 100;
+            background-color: $color-secundario;
+        }
+
+        .FormularioDeContacto{
+            h3{
+
+            }
+            form{
+                div{
+                    label{
+
+                    }
+                    input{
+
+                    }
+                }
+            }
+        }
+    }
+}
