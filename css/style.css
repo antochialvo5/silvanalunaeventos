@@ -25,10 +25,10 @@ a{
 /*----INDEX----*/
 /*----------HEADER------------*/
 
-header .navbar{
+header {
     display: flex;
-    
-
+    justify-content: space-between;
+    align-items: center;
 
 }
 header nav {
@@ -45,7 +45,6 @@ header img{
 
 header nav ul {
     list-style: none;
-    display: flex;
     margin: 10px;
     
 }

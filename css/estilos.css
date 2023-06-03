@@ -33,6 +33,12 @@ main .gridGaleria {
 /*MAPAS*/
 /*MIXINS*/
 /**Index**/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header nav {
   background-color: #faedcd;
 }
